@@ -1011,7 +1011,9 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 5px; /*ATTENTION*/
+
+
     }
     .close-lightbox {
         display: inline-block;
