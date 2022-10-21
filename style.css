@@ -3,8 +3,8 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    /* -webkit-font-smoothing: antialiased; */
-    /* -moz-osx-font-smoothing: grayscale; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a,
@@ -33,15 +33,33 @@ a:hover {
     background: 50% 50% no-repeat;
     padding: 0 50px;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
+ul#pos {
+    margin-top: 2px;
+    margin-right: 140px;
+}
+ul#pas {
+    margin-right: 5px;
+}
+.bloc-sm.container {
+    margin-right: 0;
+}
 
+/* center*/
+h2#prg {
+    margin-right: 64rem;
+}
+
+ul#icon {
+    margin-right: 72rem;
+}
+
+/* position barre de navigation accueil*/
 .bloc .container { /*attention*/
-    /* padding-left: 0; */
-    /* padding-right: 0; */
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .bloc-lg {
@@ -51,9 +69,9 @@ a:hover {
 .bloc-md {
     padding: 50px;
 }
-
+/* espace navbar */
 .bloc-sm {
-    /* padding: 20px 50px; */
+    padding: 20px 50px;
 }
 
 .bg-center,
@@ -291,6 +309,11 @@ a:hover {
     display: none;
 }
 
+/*dimension navbar */
+.padnav {
+    padding: 15px;
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -376,14 +399,12 @@ ul>li> a {
 
 @media (min-width: 768px) {
     .site-navigation {
-        
-
-        /*position: absolute;
+         position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);*/
-    }
+        -webkit-transform: translateY(-50%);
+    } 
 
     header .bloc {
         display: flex;
@@ -425,10 +446,10 @@ ul>li> a {
         margin: 10px auto 0;
     }
 
-     .col-sm-6 form-group {
+    /* .col-sm-6 form-group {
         /* margin: 0 10px 0 10px; */
 
-    }      
+    }       */
         
 
     
@@ -476,8 +497,25 @@ nav .caret {
     margin-bottom: 40px;
 }
 
+/* redimensionner bouton accueil*/
+#reset .cta-hero {
+    margin-top: 22px;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#reset {
+    position: absolute;
+    top: 17px;
+    left: 324px;
+    transform: translate(154%, -47%);
+}
+
+
 .btn {
-    margin: 0 5px 5px 0;
+    margin: 0 5px 5px 0; /*attention*/
 }
 
 .btn.pull-right {
@@ -548,11 +586,32 @@ button {
     
 }
 
+.col-sm-12 text-center .btn {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* position texte panneau gris*/
+.col-sm-12 h1, p {
+    display: flex;
+    justify-content:  center;
+}
+
 .col-sm-12 p {
     margin-bottom: 60px;
     margin-top: 20px;
     font-size: 22px;
     color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .col-sm-12 .text-ms {
@@ -780,10 +839,12 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
+/* position icone sociale*/
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    list-style-type: none;
+    padding: 30px;
 }
 
 h2 {
@@ -871,12 +932,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #c27956!important;
+    background: #F3976C!important;
     color: #000000 !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #F3976C!important;
+    background: #efb9a0!important;
 }
 
 .ltc-white {
@@ -925,14 +986,7 @@ h4 {
     display: flex;
     justify-content: center;
 }
- .row {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-   justify-content: space-between;
-
- }
-
+ 
  .col-sm-6 {
     margin-right: auto;
     margin-left: auto;
@@ -946,6 +1000,12 @@ h4 {
     padding: 10px;
 } 
   
+.container .row .col-sm-12 h1, p {
+    display: flex;
+    justify-content: center;
+
+
+}
 
 
 @media (max-width: 1024px) {
@@ -1083,7 +1143,7 @@ h4 {
     .navbar-collapse ul {
         margin-left: 571px;
     }
-    
+
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
@@ -1183,11 +1243,10 @@ h4 {
         display: flex;
         flex-direction: column;
     }
-    .navbar-header {
-        /* display: flex; */
-        /* flex-direction: row-reverse; */
-        /* justify-content: flex-start; */
-        /* align-items: center; */
-        /* margin-bottom: -13px; */
+
+    footer .container {
+        background-color: #F3976C;
+        padding: 100px;
     }
+   
 }
