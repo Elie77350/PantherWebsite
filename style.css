@@ -47,10 +47,7 @@ ul#pas {
     margin-right: 0;
 }
 
-/* center*/
-h2#prg {
-    margin-right: 64rem;
-}
+
 
 ul#icon {
     margin-right: 72rem;
@@ -405,6 +402,11 @@ ul>li> a {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     } 
+        
+    /* center*/
+    h2#prg {
+        margin-right: 64rem;
+    }
 
     header .bloc {
         display: flex;
@@ -839,6 +841,8 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
+
+
 /* position icone sociale*/
 .social {
     max-width: 400px;
@@ -981,6 +985,7 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+
 /*mise en place du formulaire*/
 #bloc-7 {
     display: flex;
@@ -1019,6 +1024,10 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    h2#prg {
+        margin-right: 1rem;
     }
 }
 
@@ -1070,6 +1079,10 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+
+    h2#prg {
+        margin-right: 1rem;
     }
 }
 
@@ -1219,12 +1232,41 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
+    header .bloc {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #bloc-0 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bgc-atomic-tangerine {
+        background-color: #F3976C;
+    }
+
+    h2#prg {
+        margin-right: 0rem;
+    }
+    
+
 }
 
 @media (max-width: 400px) { /*MODE MOBILE IPHONE 5*/
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+
+     h2#prg {
+        margin-right: 0rem;
     }
 }
 
@@ -1244,9 +1286,12 @@ h4 {
         flex-direction: column;
     }
 
-    footer .container {
+    .bgc-atomic-tangerine {
         background-color: #F3976C;
-        padding: 100px;
+    }
+
+    #prgh2 {
+        margin-right: 0rem;
     }
    
 }
